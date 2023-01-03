@@ -8,6 +8,6 @@ cd
 
 
 
-pip3 install requests
+python3 -m pip install requests
 
-echo "alias mylog="python3 ~/logtime/logtime_counter/main.py"" >> .zshrc
+echo 'alias mylog="python3 ~/logtime/logtime_counter/main.py"' >> .zshrc
