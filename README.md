@@ -10,7 +10,7 @@ To start clone this repo
 
 ## Installation
 
-Install my-project with npm
+Clone repo (you can delete it after running script successfully)
 
 ```bash
   git clone git@github.com:eyubech/logtime_counter.git
