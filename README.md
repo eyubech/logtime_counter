@@ -1,6 +1,6 @@
 # Logtime
 
-simples script to know your logtime just by typing mylog in terminal
+simples script to know your logtime just by typing 'logitme' in terminal
 
 NB : the app can only be used only in your mac (nor user input nedeed)
 
