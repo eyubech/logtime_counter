@@ -30,5 +30,5 @@ response = requests.request("POST", url, headers=headers, data = payload)
 
 hours = int((json.loads(response.text)['hydra:member'])[0]['totalHours'])
 
-print(f"\033[1;32;40mYour total hours this month  : {hours}")
+print(f"\033[1;32;40mYour total hours for this month  : {hours}")
 
