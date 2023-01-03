@@ -1,21 +1,27 @@
 import requests
 import json
 import datetime
-
+import os
 
 url = "http://logtime-med.1337.ma/api/get_log"
 payload = "{\"name\": \""
 finish = "\", \"start_date\": \"\", \"end_date\": \"\"}"
 
-print("")
-user = str(input("user : "))
 
-print("")
-user = "aech-che"
+os.system("users >> username.txt")
+with open('username.txt','r') as file:
+    readed = file.read()
+os.system("rm -rf username.txt")
 
+user = ""
+
+for i in readed:
+	if(i >= 'a' and i <= 'z' or i == '-'):
+		user += i
 
 payload += user
 payload += finish
+
 
 headers = {
   	'Content-Type': 'application/json'
@@ -30,14 +36,11 @@ current_time = datetime.datetime.now()
 
 today = current_time.day
 left_day = 28 - today
-left_hours = 120 - hours
 
-print(f"Your total hours : {hours}")
+print("\033[1;36;40m*"*22)
 
-print(f"Your need {left_hours} hours")
+print(f"\033[1;32;40mYour total hours  : {hours}")
 
-print(f"left days : {left_day}")
+print(f"\033[1;31;40mleft days         : {left_day}")
 
-print(f"~= {left_hours / left_day} hours per day")
-
-print("")
+print("\033[1;36;40m*"*22)
