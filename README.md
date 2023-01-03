@@ -25,8 +25,11 @@ NB : Make sure 2 dots
 ```bash
   . ./run
 ```
-Now close and open your terminale and your good
+Now close and open your terminale and type logtime
 
+```bash
+  logtime
+```
 
 
 Data source :  http://logtime-med.1337.ma/
