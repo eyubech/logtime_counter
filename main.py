@@ -22,25 +22,13 @@ for i in readed:
 payload += user
 payload += finish
 
-
 headers = {
   	'Content-Type': 'application/json'
 }
-
 
 response = requests.request("POST", url, headers=headers, data = payload)
 
 hours = int((json.loads(response.text)['hydra:member'])[0]['totalHours'])
 
-current_time = datetime.datetime.now()
-
-today = current_time.day
-left_day = 28 - today
-
-print("\033[1;36;40m*"*22)
-
 print(f"\033[1;32;40mYour total hours   : {hours}")
 
-print(f"\033[1;31;40mleft days          : {left_day}")
-
-print("\033[1;36;40m*"*22)
