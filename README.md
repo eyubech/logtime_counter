@@ -7,22 +7,6 @@ simples script to know your logtime just by typing 'logitme' in terminal
 NB : the app can only be used only in your mac (nor user input nedeed)
 
 To start clone this repo
-    
-## Script Update
-Clone repo (you can delete it after updating script successfully)
-```bash
-  git clone git@github.com:eyubech/logtime_counter.git
-```
-
-Go to logtime_counter folder
-
-And type this command
-
-NB : Make sure 2 dots
-
-```bash
-  . ./update.sh
-```
 
 ## Installation
 
@@ -36,12 +20,10 @@ Go to logtime_counter folder
 
 And type this command
 
-NB : Make sure 2 dots
-
 ```bash
-  . ./run
+  ./run
 ```
-Now close and open your terminale and type logtime
+Now open new terminal and type logtime
 
 ```bash
   logtime
@@ -51,4 +33,9 @@ Now close and open your terminale and type logtime
 
 ## Version 2
 <img width="452" alt="Screen Shot 2023-01-04 at 1 57 22 PM" src="https://user-images.githubusercontent.com/76597998/210560350-f9e610d1-8ffc-43ca-8112-ec37d91b9909.png">
+
+
+## Version 3
+<img width="548" alt="Screen Shot 2023-12-15 at 2 54 44 PM" src="https://github.com/eyubech/logtime_counter/assets/76597998/707595af-3a3b-487b-83a4-207a0ef7baad">
+
 Data source :  http://logtime-med.1337.ma/
