@@ -88,8 +88,3 @@ try :
 	print(f"\t \033[95m< To put ur ads here please contact [aech-che] >{reset_color}")
 except:
 	print(f"\033[95m\tAds section [Not available]{reset_color}")
-
-
-
-
-
