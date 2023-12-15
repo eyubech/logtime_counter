@@ -60,8 +60,8 @@ brown_color = '\033[33m'
 orange_color = '\033[38;5;208m'
 
 
-print(f"{green_color}\tYour total hours for today       : {today_hours}\t\tEstimated  [{int(hours_difference + today_hours)}]{reset_color}")
-print(f"{yellow_color}\tYour total hours for this month  : {total_hours}\t\tEstimated  [{int(hours_difference + total_hours)}]{reset_color}")
+print(f"{green_color}\tYour total hours for today       : {today_hours}\t\tafter logout ~  [{int(hours_difference + today_hours)}]{reset_color}")
+print(f"{yellow_color}\tYour total hours for this month  : {total_hours}\t\tafter logout ~  [{int(hours_difference + total_hours)}]{reset_color}")
 
 
 
@@ -76,7 +76,7 @@ else:
 est = (120 - total_hours) / (28 - int(dt_string))
 
 if (28 - int(dt_string) > 0 and est > 0) :
-	print(f"{color}\tLeft days                        : {28 - int(dt_string)}\t\tEstimated[{est:.1f}] {reset_color}")
+	print(f"{color}\tLeft days                        : {28 - int(dt_string)}\t\tEstimated[{est:.1f}h/d] {reset_color}")
 else : 
 	print(f"{color}\tCHIPI CHIPI CHAPA CHAPA DUBI DUBI{reset_color}")
 
