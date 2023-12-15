@@ -80,6 +80,16 @@ if (28 - int(dt_string) > 0 and est > 0) :
 else : 
 	print(f"{color}\tCHIPI CHIPI CHAPA CHAPA DUBI DUBI{reset_color}")
 
+try :
+	print(f"")
+	ads_content = os.popen("curl -s https://raw.githubusercontent.com/eyubech/logtime_counter/master/data").read().strip()
+	print(f"\033[95m\tAds section [{ads_content}]{reset_color}")
+	print(f"")
+	print(f"\t \033[95m< To put ur ads here please contact [aech-che] >{reset_color}")
+except:
+	print(f"\033[95m\tAds section [Not available]{reset_color}")
+
+
 
 
 
