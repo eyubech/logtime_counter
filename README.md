@@ -36,6 +36,6 @@ Now open new terminal and type logtime
 
 
 ## Version 3
-<img width="548" alt="Screen Shot 2023-12-15 at 2 54 44 PM" src="https://github.com/eyubech/logtime_counter/assets/76597998/707595af-3a3b-487b-83a4-207a0ef7baad">
+<img width="612" alt="Screen Shot 2023-12-15 at 3 10 46 PM" src="https://github.com/eyubech/logtime_counter/assets/76597998/39637fc7-f3ab-4ea1-a598-0dcd4fd9e1bb">
 
 Data source :  http://logtime-med.1337.ma/
