@@ -1,8 +1,9 @@
-cd
-mkdir logtime_count
-cd logtime_count
-git clone git@github.com:eyubech/logtime_counter.git
-cd
 python3 -m pip install requests
-echo 'alias logtime="python3 ~/logtime_count/logtime_counter/main.py"' >> .zshrc
-echo "Thanks for using my script :)"
+
+rm -rf $HOME/logtime_count
+mkdir $HOME/.logtime
+
+cp  main.py $HOME/.logtime/
+
+echo 'alias logtime="python3 ~/.logtime/main.py"' >> $HOME/.zshrc
+echo "**Installed uccessfully**"
