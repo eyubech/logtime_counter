@@ -72,13 +72,16 @@ if (28 - int(dt_string) >= 10):
 else:
 	color = red_color
 
+dt_int = int(dt_string)
+if (dt_int >= 28):
+	dt_int = 27
 
-est = (120 - total_hours) / (28 - int(dt_string))
+est = (120 - total_hours) / (28 - dt_int)
 
 if (28 - int(dt_string) > 0 and est > 0) :
 	print(f"{color}\tLeft days                        : {28 - int(dt_string)}\t\tEstimated[{est:.1f}h/d] {reset_color}")
 else : 
-	print(f"{color}\tCHIPI CHIPI CHAPA CHAPA DUBI DUBI{reset_color}")
+	print(f"{color}\tEligible for a scholarship [if you're not blacklisted :)]{reset_color}")
 
 try :
 	print(f"")
