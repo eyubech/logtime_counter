@@ -2,11 +2,16 @@ from datetime import date, timedelta
 from datetime import datetime
 import requests
 import json
+import sys
 import os
+
 
 today = date.today()
 url = "https://logtime-med.1337.ma/api/get_log"
-user = os.popen("users").read().strip()
+if len(sys.argv) < 2:
+	user = os.popen("users").read().strip()
+else :
+	user = sys.argv[1]
 
 first_day_of_current_month = today.replace(day=1)
 last_day_of_last_month = first_day_of_current_month - timedelta(days=1)
