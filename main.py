@@ -29,7 +29,10 @@ headers = {
 
 response = requests.request("POST", url, headers=headers, data = payload)
 response2 = requests.request("POST", url, headers=headers, data = payload2)
-today_hours = int((json.loads(response.text)['hydra:member'])[0]['totalHours'])
+try:
+	today_hours = int((json.loads(response.text)['hydra:member'])[0]['totalHours'])
+except:
+	today_hours = 0
 total_hours = int((json.loads(response2.text)['hydra:member'])[0]['totalHours'])
 now = datetime.now()
 dt_string = now.strftime("%d")
